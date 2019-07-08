@@ -17,7 +17,7 @@ class Transfer
     if valid? && sender.balance > amount
         sender.balance -= amount
         receiver.balance += amount
-        # binding.pry
+        binding.pry
         @status = "complete"
     else
       "Transaction rejected. Please check your account balance."
