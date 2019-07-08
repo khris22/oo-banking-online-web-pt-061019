@@ -20,7 +20,7 @@ class Transfer
         # binding.pry
         @status = "complete" #self.status???
       end
-    if !valid?
+    if !@sender.valid?
       "Transaction rejected. Please check your account balance."
       @status = "rejected"
     end
