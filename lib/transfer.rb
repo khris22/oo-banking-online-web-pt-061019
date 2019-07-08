@@ -20,15 +20,15 @@ class Transfer
         # binding.pry
         @status = "complete" #self.status???
       end
-    else
-      "Transaction rejected. Please check your account balance."
-      @status = "rejected"
-    end
+    # else
+    #   "Transaction rejected. Please check your account balance."
+    #   @status = "rejected"
+    # end
   end
 
-  def reverse_transfer
-    if
-    @status = "reversed"
-  end
+  # def reverse_transfer
+  #   if
+  #   @status = "reversed"
+  # end
 
 end
