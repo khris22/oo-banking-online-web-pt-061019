@@ -18,7 +18,7 @@ class Transfer
         sender.balance -= amount
         receiver.balance += amount
         # binding.pry
-        @status = "complete"
+        @status = "complete" #self.status???
     else
       "Transaction rejected. Please check your account balance."
       @status = "rejected"
