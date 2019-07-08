@@ -2,7 +2,7 @@ class Transfer
   attr_reader :sender, :receiver, :amount
   attr_accessor :status
 
-  # 
+  #
 
   def initialize(sender, receiver, amount)
     @sender = sender
@@ -19,7 +19,7 @@ class Transfer
     if valid? && @status == "pending"
         sender.balance -= amount
         receiver.balance += amount
-        # binding.pry
+        binding.pry
         @status = "complete" #self.status???
       end
     if !@sender.valid?
