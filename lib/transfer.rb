@@ -23,13 +23,14 @@ class Transfer
     if !@sender.valid?
       @status = "rejected"
       p "Transaction rejected. Please check your account balance."
-
     end
   end
 
-  # def reverse_transfer
-  #   if
-  #   @status = "reversed"
-  # end
+  def reverse_transfer
+    if valid? && @status == "complete"
+      sender.balance += amount
+      receiver.balance -= amount
+    @status = "reversed"
+  end
 
 end
