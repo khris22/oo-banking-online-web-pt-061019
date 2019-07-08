@@ -21,8 +21,9 @@ class Transfer
         @status = "complete" #self.status???
       end
     if !@sender.valid?
-      "Transaction rejected. Please check your account balance."
       @status = "rejected"
+      "Transaction rejected. Please check your account balance."
+
     end
   end
 
