@@ -8,6 +8,9 @@ class Transfer
     @amount = amount
   end
 
+  def sender
+    @sender
+  end
 
 
 end
